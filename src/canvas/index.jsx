@@ -17,6 +17,17 @@ class Canvas extends React.Component {
     this.props.actions.addFood(new Food({
       id: 1, x: 400, y: 400,
     }))
+
+    this.run()
+  }
+
+  run = () => {
+    setInterval(() => {
+      this.props.specimens.map(specimen => {
+        specimen.seek(this.props.foods[0])
+        this.props.actions.updateSpecimen(specimen)
+      })
+    }, 100)
   }
 
   render() {
