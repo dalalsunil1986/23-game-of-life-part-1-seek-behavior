@@ -1,7 +1,11 @@
 import React from 'react'
+import { connect } from 'react-redux'
+
+import { mapStateToProps, mapDispatchToProps } from './mappings'
+
 import './canvas.css'
 
-export default function( props ) {
+function Canvas( props ) {
   return <div
     className="canvas"
     style={{
@@ -11,3 +15,5 @@ export default function( props ) {
   >
   </div>
 }
+
+export default connect(mapStateToProps, mapDispatchToProps)(Canvas)
