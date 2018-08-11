@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import Canvas from './canvas'
+import './App.css'
 
 class App extends Component {
   render() {
-    return <div
-      className="canvas"
-    ></div>
+    return <Canvas />
   }
 }
 
-export default App;
+export default App
