@@ -1,6 +1,7 @@
 export function mapStateToProps(state, ownProps) {
   return {
     specimens: state.specimens,
+    foods: state.foods,
   }
 }
 
@@ -15,6 +16,16 @@ export function mapDispatchToProps(dispatch) {
       },
       updateSpecimen: (specimen) => {
         dispatch({ type: 'UPDATE_SPECIMEN', payload: specimen })
+      },
+
+      addFood: (food) => {
+        dispatch({ type: 'ADD_FOOD', payload: food })
+      },
+      removeFood: (food) => {
+        dispatch({ type: 'REMOVE_FOOD', payload: food })
+      },
+      updateFood: (food) => {
+        dispatch({ type: 'UPDATE_FOOD', payload: food })
       },
     }
   }
