@@ -5,15 +5,22 @@ import { mapStateToProps, mapDispatchToProps } from './mappings'
 
 import './canvas.css'
 
-function Canvas( props ) {
-  return <div
-    className="canvas"
-    style={{
-      height: document.documentElement.clientHeight,
-      width: document.documentElement.clientWidth,
-    }}
-  >
-  </div>
+class Canvas extends React.Component {
+  componentWillMount() {
+
+  }
+
+  render() {
+    return <div
+      className="canvas"
+      style={{
+        height: document.documentElement.clientHeight,
+        width: document.documentElement.clientWidth,
+      }}
+    >
+
+    </div>
+  }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Canvas)
