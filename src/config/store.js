@@ -1,6 +1,8 @@
 import { createStore, combineReducers } from 'redux'
+import specimenReducer from '../reducers/specimens'
 
 const rootReducer = combineReducers({
+  specimens: specimenReducer,
 })
 
 const store = createStore(
