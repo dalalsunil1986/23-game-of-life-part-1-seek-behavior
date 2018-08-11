@@ -2,3 +2,12 @@
   position: absolute;
   background-color: black;
 }
+
+.entity {
+  position: absolute;
+}
+
+.specimen {
+  background-color: blue;
+  border-radius: 50%;
+}
