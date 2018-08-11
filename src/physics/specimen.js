@@ -10,3 +10,5 @@ class Specimen extends Entity {
     super(props)
   }
 }
+
+export default Specimen
